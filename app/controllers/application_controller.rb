@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :cart
 
   def cart
-    session[:cart] = [] unless session[:cart].exist?
+    session[:cart] = [] unless session[:cart]
     session[:cart]
   end
 
