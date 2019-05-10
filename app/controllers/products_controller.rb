@@ -1,8 +1,6 @@
 class ProductsController < ApplicationController
 
   def index
-    byebug
-    @items = cart
   end
 
   def add
