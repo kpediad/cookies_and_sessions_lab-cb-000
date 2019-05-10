@@ -1,5 +1,4 @@
 class ProductsController < ActionController::Base
-  helper_method :cart
 
   def index
     @items = cart
