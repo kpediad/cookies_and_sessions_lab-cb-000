@@ -1,0 +1,11 @@
+<% @items.each do |items| %>
+  <ul>
+    <li><%= item %></li>
+  </ul>
+<% end %>
+<br>
+<%= form_tag('/products') do %>
+  <%= label_tag 'item_id', 'Item Id:' %>
+  <%= text_field_tag 'item_id' %>
+  <%= submit_tag 'Add to Cart' %>
+<% end %>
