@@ -4,8 +4,8 @@ class ProductsController < ActionController::Base
   end
 
   def add
-    @item = Item.find(params[:id])
-    cart << @item.id
+    cart << params[:item_id]
+    session[:cart] = cart
     redirect_to root_path
   end
 end
