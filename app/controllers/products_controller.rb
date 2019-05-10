@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    cart << params[:item_id]
+    cart << params[:product]
     session[:cart] = cart
     redirect_to root_path
   end
